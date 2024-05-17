@@ -43,6 +43,7 @@ const persona = null;
 //Objeto
 //const animal = new Object;
 const animal = {
+    nombre: 'Atom',
     patas: 4,
     ladra: true,
     comidasFavoritas: [ 'croquetas', 'pollo' ],
@@ -50,8 +51,15 @@ const animal = {
         isLanudo: false,
 
     },
-    caminar: () =>{}
+    getNombre(){
+        return this.nombre;
+    },
+    caminar(){
+        console.log(`El nombre es: ${this.getNombre()} `);
+    },
+    
 };
+
 
 console.log( animal );
 
@@ -65,4 +73,4 @@ console.log( colores.join(' ') );
 console.log( 'total caracteres direccion: '+direccion.length );
 
 
-
+animal.caminar();
