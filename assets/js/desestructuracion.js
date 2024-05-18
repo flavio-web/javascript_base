@@ -17,14 +17,21 @@ const profesion = usuario.profesion; */
 const { ...resto } = usuario;
 
 //console.log({ edad, profesion, telefono, email });
-console.log( resto );
+//console.log( resto );
 
-if( 10 == '10' ){
-    console.log("son iguales");
-}
 
-if( 10 === '10' ){
-    console.log("son iguales");
-}else{
-    console.log('No son iguales en ===');
-}
+
+/***
+ * 
+ * Desdestructuracion de arreglos
+ * 
+ ***/
+
+const colores = [ 'azul', 'amarillo', 'rojo', 'verde' ];
+
+/* console.log( colores[0] );
+console.log( colores[1] ); */
+
+const [ pepe, maria ] = colores;
+
+console.log( pepe, maria );
